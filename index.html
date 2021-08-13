@@ -6,22 +6,51 @@
     <script src="JS/movie.js" defer></script>
     <script src="JS/script.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>Filmzoeker</title>
 </head>
 <body>
     <header>
         <div class="hero">
-            
+            <h1>Zoek je leukste film uit!</h1>
+            <div class="hero-image-section">
+                <img class="hero-image img-1" src="https://m.media-amazon.com/images/M/MV5BZGIzNWYzN2YtMjcwYS00YjQ3LWI2NjMtOTNiYTUyYjE2MGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" alt="hero-image">
+                <img class="hero-image img-2" src="https://m.media-amazon.com/images/M/MV5BZmIyMDk5NGYtYjQ5NS00ZWQxLTg2YzQtZDk1ZmM4ZDBlN2E3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                alt="hero-image">
+                <img class="hero-image img-3" src="https://m.media-amazon.com/images/M/MV5BNDk0NjYxMzIzOF5BMl5BanBnXkFtZTYwMTc1MjU3._V1_SX300.jpg" alt="hero-image">
+            </div>
         </div>
-        <nav>
-
+        <nav> 
+            <li>
+                <label for="alle-films">Alle films</label><input type="radio" name="search-radio" id="alle-films" value="alle-films">
+            </li>
+            <li>
+                <label for="nieuwste-films">Laatste Films, 2014 of nieuwer</label><input type="radio" name="search-radio" id="nieuwste-films" value="laatste-films">
+            </li>
+            <li>
+                <label for="avenger-films">Avenger Films</label><input type="radio" name="search-radio" id="avenger-films" value="avenger-films">
+            </li>
+            <li>
+                <label for="x-men-films">X-Men Films</label><input type="radio" name="search-radio" id="x-men-films" value="x-men-films">
+            </li>
+            <li>
+                <label for="princess-films">Princess Films</label><input type="radio" name="search-radio" id="princess-films" value="princess-films">
+            </li>
+            <li>
+                <label for="batman-films">Batman Films</label><input type="radio" name="search-radio" id="batman-films" value="batman-films">
+            </li>
         </nav>
         
     </header>
-    <main></main>
-    <aside></aside>
-    <footer></footer>
-
-
+        <main class="main-section">
+            <h2 id="main-section-title">
+                Alle Films
+            </h2>
+            <ul id="film-list">
+    
+            </ul>
+        </main>
+    <footer>
+        <p><a href="#">filmzoeker.nl</a></p>
+    </footer>
 </body>
 </html>
