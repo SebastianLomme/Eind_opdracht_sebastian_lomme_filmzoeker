@@ -40,6 +40,15 @@ img {
     background-color: black;
     height: 400px;
     position: relative;
+
+        .search-blok {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1;
+        list-style: none;
+    }
+    
 }
 
 .hero-image-section {
@@ -114,6 +123,9 @@ nav {
 }
 
 main {
+
+    // position: relative;
+
     ul {
         display: grid;
         grid-template-columns: repeat(1, auto);
@@ -128,6 +140,12 @@ main {
             grid-template-columns: repeat(5, auto);
         }
     }
+
+    // .search-blok {
+    //     position: absolute;
+    //     top: -40px;
+    //     right: 10px;
+    // }
 
 
     .film-item {

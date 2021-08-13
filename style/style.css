@@ -44,6 +44,14 @@ img {
   position: relative;
 }
 
+.hero .search-blok {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  list-style: none;
+}
+
 .hero-image-section {
   display: -webkit-box;
   display: -ms-flexbox;

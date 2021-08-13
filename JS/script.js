@@ -1,6 +1,8 @@
 const filmList = document.getElementById("film-list")
 const radioButton = document.querySelectorAll("input[name='search-radio'")
 const mainSectionTitle = document.getElementById("main-section-title")
+const searchBalk = document.getElementById("search-balk")
+const radio = document.querySelectorAll("input[type=radio]")
 
 
 radioButton.forEach(element => {
@@ -92,3 +94,12 @@ const resetDom = (text) => {
 }
 
 
+searchBalk.addEventListener('input', (event) => {
+    resetDom("Search films")
+    filterMovies(event.target.value)
+    console.log(event.target.value)
+    radio.forEach(item => {
+        if (item.checked) {
+            item.checked = false
+        }})
+    })
